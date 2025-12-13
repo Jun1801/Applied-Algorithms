@@ -1,0 +1,20 @@
+Given a sequence a1, a2, ..., an
+Consider a subset of the sequence
+The distance of the subset is defined to be the minimum distance between two elements
+Find the subset of N given elements containing exactly C elements such that the distance is maximal.
+
+stdin:
+1
+5 3
+1 2 8 4 9
+stdout:
+3
+
+Sol: Sắp xếp tăng dần: a[1], a[2],..., a[n]
+RM1: bắt buộc phải có số bé nhất trong dãy con cần tìm
+
+bởi vì vd dãy cần tìm là a[2], a[4], a[8]
+mà nếu a[1]<a[2] => a[1], a[4], a[8] là dãy con tốt hơn
+
+RM2: khoảng cách của dãy con <= (a[n] - a[1]) / (C-1) = d
+Duyệt từ d -> 1, tìm khoảng cách dãy con lớn nhất

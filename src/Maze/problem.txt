@@ -1,0 +1,23 @@
+• Find the shortest path to get out of a maze
+• A rectangular maze is represented by a 0-1 NxM matrix in which
+A[i,j] = 1 represents cell (i,j) as a brick wall, and 
+A[i,j] = 0 represents cell (i,j) as an empty cell
+From an empty cell, we can move to 1 of 4 neighboring cells (up, down, 
+left, right) if that cell is empty. 
+Starting from an empty cell in the maze, find the shortest path out of 
+the maze.
+• Input: the matrix representing the maze, the starting cell.
+• Output: the shortest path’s length, or -1 for non-existing cases.
+
+stdin:
+8 12 5 6
+1 1 0 0 0 0 1 0 0 0 0 1
+1 0 0 0 1 1 0 1 0 0 1 1
+0 0 1 0 0 0 0 0 0 0 0 0
+1 0 0 0 0 0 1 0 0 1 0 1
+1 0 0 1 0 0 0 0 0 1 0 0
+1 0 1 0 1 0 0 0 1 0 1 0
+0 0 0 0 1 0 1 0 0 0 0 0
+1 0 1 1 0 1 1 1 0 1 0 1
+
+stdout: 7

@@ -1,0 +1,21 @@
+Schedule working timetable for a nurse in N consecutive days 1, 2,..., N.
+This is divided into series of consecutive working days (working period)
+
+Constraints:
++ only 1 day off between 2 working period
++ A working period has length in segment [K1, K2]
+Input: N, K1, K2
+Output: number of valid ways to Schedule
+Ex:
+stdin: 6 2 3
+output: 4
+
+
+Solution:
+Dynamic Programming
+
+P[i]: number of valid ways to schedule if day i_th: working
+Q[i]: number of valid ways to schedule if day i_th: off
+
+=> P[i] = sum_{{j=K1} ^K2}(Q[i-j]) // off: i-j, work : i-j+1, i-j+2, ..., i-1, i 
+=> Q[i] = P[i-1]

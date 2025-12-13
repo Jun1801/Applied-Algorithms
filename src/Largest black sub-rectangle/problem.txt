@@ -1,0 +1,15 @@
+Given a rectangle with cell in black or white. Find the largest 
+sub-rectangle with all black cell.
+• The rectangle is represented by a 0-1 NxM matrix:
+A[i,j] = 1 represents cell (i,j) as a black cell, and 
+A[i,j] = 0 represents cell (i,j) as a white cell
+• Output: the area of the sub-rectangle
+
+std: 
+4 4
+0 1 1 1
+1 1 1 0
+1 1 0 0
+1 1 1 0
+
+stdout: 6
