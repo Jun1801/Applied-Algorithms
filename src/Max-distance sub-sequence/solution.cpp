@@ -38,6 +38,7 @@ int findD(){
     }
     return l;
 }
+
 int main(){
     input();
     sort(a+1, a+n+1);
